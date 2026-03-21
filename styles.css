@@ -447,7 +447,7 @@ display: none;
 .header {
     width: 125px; /* Fixed width */
     height: 100vh; /* Full height */
-    padding: 1.25rem 2rem 2rem 2rem;
+    padding: 1.25rem 1rem 2rem 1rem;
     background: var(--bg-color);
     display: flex;
     flex-direction: column;
@@ -497,9 +497,9 @@ display: none;
 
 
 .navbar a {
-    font-size: 2rem;
+    font-size: 1.75rem;
     color: var(--text-color);
-    margin: 1.25rem 0;
+    margin: 0.75rem 0;
     text-align: center;
     position: relative;
     transition: all 0.4s ease-in-out;
@@ -562,6 +562,121 @@ display: none;
 .home-content {
   padding: 2rem;
 }
+
+
+.logo {
+  letter-spacing: 0.5px;
+}
+
+.logo-dot {
+  color: var(--main-color);
+  font-weight: 400;
+  margin-left: 0.5rem;
+}
+
+.logo:hover .logo-dot {
+  color: var(--text-color);
+}
+
+.resume-btn {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin-top: 0.5rem;
+  padding: 5.5px 12.5px;
+  border: 1.5px solid var(--main-color);
+  border-radius: 10px;
+  color: var(--main-color);
+  font-size: 1.3rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  white-space: nowrap;
+}
+
+.resume-btn:hover {
+  background: var(--main-color);
+  color: var(--bg-color);
+}
+
+.sidebar-social {
+  margin-top: 1.8rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.follow-label {
+  font-size: 1.1rem;
+  color: var(--text-color);
+  opacity: 0.55;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  margin-bottom: 0.7rem;
+}
+
+.social-icons {
+  display: flex;
+  gap: 5px;
+  margin-bottom: 1.2rem;
+}
+
+.social-icons a {
+  font-size: 1.5rem;
+  color: var(--text-color);
+  transition: color 0.3s, transform 0.3s;
+   border: 1.5px solid rgba(128, 128, 128, 0.4);
+  border-radius: 50%;
+  padding: 6px;
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.social-icons a:hover {
+  color: var(--main-color);
+}
+
+.sidebar-divider {
+  width: 70%;
+  height: 1px;
+  background: var(--text-color);
+  opacity: 0.25;
+  margin-bottom: 1.1rem;
+}
+
+.available-dot {
+  display: flex;
+  flex-direction: column;  /* add this */
+  align-items: center;
+  gap: 7px;
+}
+
+.dot-pulse {
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  background: #22c55e;
+  display: inline-block;
+  animation: pulse-green 1.8s ease-in-out infinite;
+}
+
+@keyframes pulse-green {
+  0%, 100% { box-shadow: 0 0 0 0 rgba(34,197,94,0.5); }
+  50% { box-shadow: 0 0 0 5px rgba(34,197,94,0); }
+}
+
+.avail-text {
+  font-size: 1.15rem;
+  color: var(--text-color);
+  font-weight: 500;
+  letter-spacing: 0.1px;
+    text-align: center;
+}
+
 
 
 
