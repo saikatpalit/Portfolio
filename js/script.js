@@ -1155,3 +1155,10 @@ messageBox2.addEventListener("focus", () => {
   function closeGithub() {
     document.getElementById("githubOverlay").style.display = "none";
   }
+
+
+  window.addEventListener('load', () => {
+  setTimeout(() => {
+    document.getElementById('loader').classList.add('hide');
+  }, 1800);
+});
