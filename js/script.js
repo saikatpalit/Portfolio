@@ -1141,7 +1141,7 @@ messageBox2.addEventListener("focus", () => {
 
     // Load calendar only once
     if (!window.calendarLoaded) {
-      GitHubCalendar("#github-calendar", "palitsaikat001", {
+      GitHubCalendar("#github-calendar", "saikatpalit", {
         responsive: true,
         tooltips: false
       });
