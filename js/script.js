@@ -430,7 +430,7 @@ let downloadedOnce = false;
 // Disable buttons visually and functionally
 function disableButtons() {
   downloadButtons.forEach(btn => {
-    btn.textContent = "CV Downloaded";
+    btn.textContent = "Downloaded";
     btn.classList.add("disabled");        // for styles like opacity, font-size
     btn.style.cursor = "not-allowed";     // 🔥 inline style = highest priority
   });

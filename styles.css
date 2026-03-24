@@ -639,6 +639,11 @@ display: none;
   white-space: nowrap;
 }
 
+.resume-mobile, 
+.sidebar-mobile {
+  display: none !important;
+}
+
 .resume-btn:hover {
   background: var(--main-color);
   color: var(--bg-color);
@@ -4315,8 +4320,9 @@ padding: 0 2.5rem;
   .home-stats-glass {
       flex-wrap: wrap;
   justify-content: center;
-  width: 100%;
+  width: 95%;
   box-sizing: border-box;
+  justify-self: center;
   }
 
   .stat-item {
@@ -4324,11 +4330,37 @@ padding: 0 2.5rem;
     align-items: center;
     
   }
+  
 
 .resume-btn,
 .sidebar-social {
   display: none;
 }
+
+.resume-mobile, 
+.sidebar-mobile {
+  display: flex !important;
+}
+
+
+.resume-btn {
+  font-size: 0.5rem;
+}
+  .resume-mobile {
+    font-size: 0.25rem;
+    padding: 2.5px 5px;
+    gap: 4px;
+  }
+
+  .resume-mobile i {
+    font-size: 0.25rem;
+  }
+
+  .sidebar-mobile {
+    font-size: 0.5rem;
+  }
+
+
   #home .check-desktop1 {
   display: none;
 }
