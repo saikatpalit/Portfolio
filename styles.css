@@ -1368,7 +1368,7 @@ margin-bottom: 1.5rem;
   display: block;
   margin: 0; /* left-align the button */
   text-align: center; /* center text inside */
-  color: var(--main-color);
+  color: var(--text-color);
   font-weight: 600;
   cursor: pointer;
   white-space: nowrap;
@@ -1377,8 +1377,12 @@ margin-bottom: 1.5rem;
 
 
 
-.inline-read-btn:hover {
+/* .inline-read-btn:hover {
     text-shadow: 0 0 2.5px rgb(0, 255, 0), 0 0 5px rgb(0, 255, 0);
+} */
+
+.inline-read-btn:hover {
+    text-shadow: 0 0 2.5px var(--main-color);
 }
 
 .inline-read-btn .arrow {
@@ -4299,7 +4303,7 @@ padding: 0 2.5rem;
   }
 
   .stat-item {
-    padding: 0 0.5rem;
+    padding: 0 0.25rem;
     align-items: center;
     
   }
