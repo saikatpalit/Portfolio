@@ -4332,6 +4332,9 @@ padding: 0 2.5rem;
   }
   
 
+  .stat-item p{
+    font-size: 1.25rem !important;
+  }
 .resume-btn,
 .sidebar-social {
   display: none;
