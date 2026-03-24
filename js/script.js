@@ -87,6 +87,10 @@ navLinks.forEach((link) => {
         // Desktop → normal smooth scroll
         targetElement.scrollIntoView({ behavior: "smooth" });
       }
+
+
+            // ✅ Remove hash from URL without reloading or jumping
+      history.replaceState(null, "", window.location.pathname);
     }, 300); // matches navbar transition speed
   });
 });
