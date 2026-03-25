@@ -2738,7 +2738,7 @@ body.project-open .menu-btn.active:hover {
 }
 
 .portfolio-box.active .expanded-details img {
-  width: 25%;
+  width: 22.5%;
   height: auto;              /* ✅ let image decide height */
   max-height: 100%;         /* optional safety limit */     /* keep full image visible */
   margin-bottom: 1.5rem;
@@ -2911,7 +2911,7 @@ body.project-open .menu-btn.active:hover {
 .zoom-view {
   position: relative;  /* NOT absolute */
   width: 100%;
-  min-height: 400px;
+  min-height: 395px;
   background: transparent;
   display: flex;
   flex-direction: column;
