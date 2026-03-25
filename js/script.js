@@ -411,9 +411,81 @@ document.addEventListener("DOMContentLoaded", () => {
       });
     }
   });
+  
 
   // Initial sync (in case some box is marked active in HTML)
   updateProjectState();
+
+  document.querySelectorAll(".portfolio-box").forEach(box => {
+  const images = box.dataset.images ? box.dataset.images.split(",") : [];
+  const sliderImg = box.querySelector(".slider-img");
+  const leftArrow = box.querySelector(".left-arrow");
+  const rightArrow = box.querySelector(".right-arrow");
+  const zoomView = box.querySelector(".zoom-view");
+  const zoomedImg = box.querySelector(".zoomed-img");
+  const zoomBack = box.querySelector(".zoom-back");
+  const projSlider = box.querySelector(".proj-slider");
+
+  if (!sliderImg || images.length === 0) return;
+
+  let currentIndex = 0;
+
+  // set initial image
+  sliderImg.src = images[0];
+
+  // hide arrows if only one image
+  if (images.length <= 1) {
+    if (leftArrow) leftArrow.style.display = "none";
+    if (rightArrow) rightArrow.style.display = "none";
+  }
+
+  // next photo
+  if (rightArrow) {
+    rightArrow.addEventListener("click", e => {
+      e.stopPropagation();
+      currentIndex = (currentIndex + 1) % images.length;
+      sliderImg.src = images[currentIndex];
+    });
+  }
+
+  // prev photo
+  if (leftArrow) {
+    leftArrow.addEventListener("click", e => {
+      e.stopPropagation();
+      currentIndex = (currentIndex - 1 + images.length) % images.length;
+      sliderImg.src = images[currentIndex];
+    });
+  }
+
+  // click image → zoom in
+// click image → zoom in
+if (sliderImg) {
+  sliderImg.addEventListener("click", () => {
+    zoomedImg.src = images[currentIndex];
+
+    // hide everything inside expanded-details except zoom-view
+    box.querySelector(".expanded-details").querySelectorAll(
+      "span, p, .visit-btn, .close-details, .proj-slider"
+    ).forEach(el => el.style.display = "none");
+
+    zoomView.style.display = "flex";
+  });
+}
+
+// zoom back → restore everything
+if (zoomBack) {
+  zoomBack.addEventListener("click", e => {
+    e.stopPropagation();
+    zoomView.style.display = "none";
+
+    // show everything back
+    box.querySelector(".expanded-details").querySelectorAll(
+      "span, p, .visit-btn, .close-details, .proj-slider"
+    ).forEach(el => el.style.display = "");
+  });
+}
+});
+
 });
 
 // Select both download buttons (second one is optional)
