@@ -3408,8 +3408,17 @@ text-align: center;
 
 /* ↓↓↓ 1200px and below ↓↓↓ */
 
+@media screen and (min-width: 1600px) {
+    .portfolio-layer h4 {
+  font-size: 1.25rem;
+  }
+}
 
 @media screen and (min-width: 1400px) {
+
+  .portfolio-layer h4 {
+  font-size: 1.25rem;
+  }
 
   .type1 {
     width: 55px;
@@ -3499,6 +3508,9 @@ text-align: center;
 
 @media (max-width: 1200px) {
 
+  .portfolio-layer h4 {
+  font-size: 1.25rem;
+  }
   
   .header {
     width: 110px;
