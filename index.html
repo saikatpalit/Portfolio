@@ -1202,38 +1202,58 @@ innovative team, and grow together while delivering impactful results. <br> Than
       <div class="contact-container">
         <!-- Left Side: Contact Info -->
         <div class="contact-info">
-          <h2>Contact <span>Me!</span></h2>
+
+                <div class="contact-badge">
+        <span class="dot-pulse"></span>
+        <span>Available for work</span>
+      </div>
+          <h2>Let's <span>Connect.</span></h2>
           <p>
 I’m actively looking for opportunities where<br> I can contribute as a software
-developer & continue growing as part of an innovative team <br>
-let’s connect!
+developer & continue growing as part of an innovative team..!
 
           </p>
-          <ul class="contact-details">
+<div class="contact-cards">
 
-        
-              <li><strong>Location :</strong><br> [kolkata, West Bengal, India]</li>
-<li class="contact-details1">
-  <strong>Email : </strong>
-  <a href="mailto:palit.saikat.001@gmail.com?subject=Regarding%20Your%20Portfolio&body=Hello,%0D%0A%0D%0AI have reviewed your portfolio and was impressed with your work.%0D%0A I would like to discuss further opportunities with you now...%0D%0A%0D%0ABest regards,%0D%0A[Your Name]">
-    <span>contact.saikat.dev@gmail.com</span>
-  </a>
-  
-</li>
+  <div class="contact-card" onclick="window.location.href='mailto:contact.saikat.dev@gmail.com'" style="cursor:pointer;">
+    <div class="contact-card-icon"><i class='bx bx-envelope'></i></div>
+    <div class="contact-card-text">
+      <span class="contact-card-label">Email</span>
+      <span class="contact-card-value">contact.saikat.dev@gmail.com</span>
+    </div>
+  </div>
 
+  <!-- ✅ Location + Response Time side by side -->
+  <div class="contact-cards-row">
 
-            
-            <!-- <li><strong>OR</strong> <br> [SEND MESSAGE] </li> -->
-          </ul>
+    <div class="contact-card">
+      <div class="contact-card-icon"><i class='bx bx-map'></i></div>
+      <div class="contact-card-text">
+        <span class="contact-card-label">Location</span>
+        <span class="contact-card-value">Kolkata, India</span>
+      </div>
+    </div>
+
+    <div class="contact-card">
+      <div class="contact-card-icon"><i class='bx bx-time'></i></div>
+      <div class="contact-card-text">
+        <span class="contact-card-label">Response Time</span>
+        <span class="contact-card-value">Within 24 hours</span>
+      </div>
+    </div>
+
+  </div>
+
+</div>
 
           
-        <div class="social-media">
+        <!-- <div class="social-media">
     <a href="#" class="project-link"><i class="bx bxl-facebook"></i></a>
     <a href="#" class="project-link"><i class="bx bxl-twitter"></i></a>
     <a href="#" class="project-link"><i class="bx bxl-instagram"></i></a>
     <a href="#" class="project-link"><i class="bx bxl-youtube"></i></a>
     <a href="#" class="project-link"><i class="bx bxl-linkedin"></i></a>
-        </div>
+        </div> -->
         
         <a href="assets/cv.pdf" class="btn download-cv" id="download-cv">Download CV</a>
         </div>
@@ -1244,7 +1264,7 @@ let’s connect!
 
 
   
-  <h3 class="form-title">Get In Touch</h3 >
+  <h3 class="form-title">Send a Message</h3 >
   <p class="form-description">Fill out the form below..I’ll get back to you soon!</p>
 
   <form id="contactForm2" action="https://formsubmit.co/mrxworld001@gmail.com" method="POST">
@@ -1253,6 +1273,7 @@ let’s connect!
       <input type="hidden" name="_template" value="table">
 
       <div class="input-box">
+        
         <input type="text" name="Full Name" placeholder="Full Name" required />
         <input type="email" name="Email Address" placeholder="Email Address" required />
       </div>
