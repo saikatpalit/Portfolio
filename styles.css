@@ -413,6 +413,7 @@ main.shifted #home .btn-alt {
   margin-bottom: 1rem;
   font-size: 2.25rem;
   color: var(--text-color);
+  letter-spacing: 2px;
 }
 
 .popup-email a {
