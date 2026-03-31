@@ -3252,6 +3252,7 @@ body.project-open .menu-btn.active:hover {
   margin-bottom: 1.55rem; /* was 2rem */
   margin-top: 0.5rem;
   text-align: left;
+  color: rgb(167, 167, 167);
 }
 
 .contact-details {
@@ -3414,6 +3415,8 @@ text-align: center;
 }
 
 
+
+
 .contact-cards {
   display: flex;
   flex-direction: column;
@@ -3513,6 +3516,8 @@ main.shifted .contact-card-value {
     width: 20.5px;
   height: 20.5px;
 }
+
+
 
 
 /* === Footer Section === */
@@ -4560,6 +4565,11 @@ padding: 0 2.5rem;
   .navbar a {
     margin: 0 1rem; 
   } */
+
+  .popup-email {
+    font-size: 1.5rem;
+    letter-spacing: 2px;
+  }
 
 main.shifted .home .btn {
   font-size: 0.85rem;
